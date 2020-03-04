@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Find the precious!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>FindThePrecious.com</li>
+                <li class="hov">Fellows</li>
+                <li class="hov">Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <div class="carousel"></div>
+        </section>
+        <section>
+            <h2 id="fellows">Fellows wanted dead <span>(or alive if you want to eat them later)</span></h2>
+        </section>
+        <section id="sectart">
+            <article></article>
+            <article></article>
+            <article></article>        
+        </section>
+        <form>
+            <h2 id="contact">Contact us</h2>
+            <input type="email" placeholder="@" class="xform"><br>
+            <input type="text" placeholder="&#8962;" class="xform"><br>
+            <input type="text" placeholder="I have seen one of them" class="xform"><br>
+            <textarea placeholder="Your message" class="xform"></textarea>
+        </form>
+    </body>
+</html>
+
+body{
+    margin: 0 auto;
+}
+ 
+nav {
+    background-color: #555151;
+    color: white;
+    height:30px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+}
+li:first-child {
+    font-size: 25px;
+    margin-left: 0;
+    padding-right: 20px;
+}
+.hov{
+    padding: 0 20px;
+}
+ 
+.hov:hover{
+    background-color: #968e8e;
+    color: #555151;
+    padding: 8px 20px 4px 20px;
+}
+.carousel {
+    background-color: #cfc5c5;
+    height: 250px;
+}
+ 
+#sectart{
+    height: 500px;
+    text-align: center;
+}
+#fellows{
+    margin: 30px auto;
+    text-align: center;
+}
+span{font-size: 18px;}
+ 
+article{
+    background-color: #cfc5c5;
+    height: 350px;
+    width: 280px;
+    margin-left: 10px;
+    display: inline-block;
+}
+form {
+    border-top: 2px #555151 solid;
+}
+.xform{
+    width: 600px;
+    margin: 0 auto 3px auto;
+    display: block;
+}
+@media screen and (max-width: 961px){
+    #contact {
+        text-align: center;
+    }
+    .carousel, #sectart{
+        display: none;
+    }
+}
